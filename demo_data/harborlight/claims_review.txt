@@ -1,0 +1,6 @@
+Claims review
+
+The claims team reviews two claims per operating day.
+Each review takes 15 minutes.
+Two analysts process new claims in the claims system.
+Customer claim details include personal and payment information.

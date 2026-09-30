@@ -1,0 +1,9 @@
+Shipment booking
+
+Coordinator enters shipment details in the TMS.
+
+The team books four shipments per week.
+Each shipment takes 30 minutes to enter.
+Three coordinators do this work.
+We do not track a separate error rate.
+Sensitive customer and shipment data are handled in the workflow.

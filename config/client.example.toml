@@ -1,0 +1,28 @@
+# Blank strings and empty tables mean "not configured".
+# They are not zero and must never be used as scoring defaults.
+# Copy to client.toml and fill in only client-confirmed values.
+
+[client]
+name = "Harborlight Logistics (FICTIONAL DEMO)"
+
+[calendar]
+work_days_per_week = ""
+weeks_per_year = ""
+
+[finance]
+currency = ""
+role_hourly_rates = {}
+
+[coverage_by_verdict]
+"rules-based automation" = ""
+"LLM/generative" = ""
+"classic ML" = ""
+"RPA/integration" = ""
+"keep human" = ""
+
+[implementation_cost_by_verdict]
+"rules-based automation" = ""
+"LLM/generative" = ""
+"classic ML" = ""
+"RPA/integration" = ""
+"keep human" = ""

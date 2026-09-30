@@ -1,0 +1,93 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "gold-v1",
+  "steps": [
+    {
+      "step_id": "shipment-booking",
+      "process": "Shipment booking",
+      "actor": "Coordinator",
+      "task": "Enter shipment details",
+      "tools": ["TMS"],
+      "frequency": {
+        "value": 4,
+        "unit": "per week",
+        "status": "stated",
+        "raw_text": "four shipment bookings each week"
+      },
+      "frequency_basis": "total",
+      "minutes_per_run": {
+        "value": 30,
+        "unit": "minutes",
+        "status": "stated",
+        "raw_text": "30 minutes"
+      },
+      "people_doing_it": {
+        "value": 3,
+        "unit": "people",
+        "status": "stated",
+        "raw_text": "three coordinators"
+      },
+      "error_rate": {
+        "value": null,
+        "unit": null,
+        "status": "unknown",
+        "raw_text": null
+      },
+      "handles_sensitive_data": true,
+      "evidence": [
+        {
+          "document": "shipment_booking.txt",
+          "location": "line 3",
+          "quote": "We book four shipments per week and each booking takes 30 minutes.",
+          "verified": true
+        }
+      ],
+      "review_status": "confirmed",
+      "conflicts": []
+    },
+    {
+      "step_id": "claims-review",
+      "process": "Claims review",
+      "actor": "Claims analyst",
+      "task": "Review incoming damage claims",
+      "tools": ["Claims system"],
+      "frequency": {
+        "value": 2,
+        "unit": "per day",
+        "status": "stated",
+        "raw_text": "two claims per operating day"
+      },
+      "frequency_basis": "total",
+      "minutes_per_run": {
+        "value": 15,
+        "unit": "minutes",
+        "status": "stated",
+        "raw_text": "15 minutes"
+      },
+      "people_doing_it": {
+        "value": 2,
+        "unit": "people",
+        "status": "stated",
+        "raw_text": "two analysts"
+      },
+      "error_rate": {
+        "value": null,
+        "unit": null,
+        "status": "unknown",
+        "raw_text": null
+      },
+      "handles_sensitive_data": true,
+      "evidence": [
+        {
+          "document": "claims_review.txt",
+          "location": "line 9",
+          "quote": "The claims team handles two claims per operating day and each review takes 15 minutes.",
+          "verified": true
+        }
+      ],
+      "review_status": "confirmed",
+      "conflicts": []
+    }
+  ]
+}
